@@ -147,8 +147,9 @@
       const email = form.email.value;
       const password = form.password.value;
 
-      const res = await fetch('https://script.google.com/macros/s/AKfycbxwi0KlTv39kasjNxnG_sPvRSwr8_Hgwy_UfqnlVvtyOLrd01UPSwUcd5OYcjzp8N4X/exec', {
+      const res = await fetch('https://script.google.com/macros/s/AKfycbxS2yrkgbLrrPiXAsNn4wG4ISJI9F-OOLACqaJ-B9RBkcjt7ZSVHRYKzeGOMLLY8WrS/exec', {
         method: 'POST',
+        mode: "no-cors",
         body: JSON.stringify({ email, password }),
         headers: {
           'Content-Type': 'application/json'
